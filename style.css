@@ -1,0 +1,48 @@
+html {
+    font-size: 10px;
+    /*background: url('./background.png') bottom center;*/
+    background-size: cover;
+  }
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  .container {
+    display: grid;
+    gap: 1px;
+    width: fit-content;
+    height: fit-content;
+    /*grid-auto-rows: minmax(1fr, auto);*/
+    
+  }
+
+  div {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+  }
+  .griditem {
+    margin: 0rem 0rem;
+    font-size: 1.5rem;
+    text-shadow: 0 0 .5rem black;
+    text-align: center;
+    padding: .5rem .5rem;
+    transition: all .07s ease;
+    z-index: 1;
+    /*height: 3rem;*/
+  }
+  .griditem:hover {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+  .highlighted {
+    border-color: #ffc600;
+    background: #ffc600;
+
+  }
